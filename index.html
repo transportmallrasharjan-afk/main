@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport Mallrash - Arjan Kola</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #f9f9f9;
+      overflow-x: hidden;
+    }
+    header {
+      background: #4a5764;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .logo {
+      margin-top: 1.5rem;
+    }
+    .logo img {
+      max-width: 120px;
+    }
+    .phone {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      animation: pulse 2s infinite;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      animation: fadeUp 1s ease;
+    }
+    section h2 {
+      text-align: center;
+      color: #4a5764;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .cta a {
+      display: inline-block;
+      background: #4a5764;
+      color: white;
+      padding: 0.9rem 1.8rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s, transform 0.3s;
+      margin: 0.5rem;
+    }
+    .cta a:hover {
+      background: #3a444f;
+      transform: translateY(-3px);
+    }
+    footer {
+      background: #4a5764;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    /* Floating Button */
+    .floating-btns {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    .floating-btns a {
+      background: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .floating-btns a:hover {
+      transform: scale(1.1);
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes pulse {
+      0% {transform: scale(1);}
+      50% {transform: scale(1.05);}
+      100% {transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transport Mallrash në Shqipëri</h1>
+    <p>Shërbim i besueshëm dhe i shpejtë nga Arjan Kola</p>
+    <p class="phone">☎️ +355 68 854 6267 (WhatsApp & Telefonata)</p>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Arjan Kola">
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Kush jam ?</h2>
+      <p style="text-align:center; max-width:800px; margin:auto;">Unë jam <strong>Arjan Kola</strong>, banues në fund të Bulevardit të Ri në Tiranë, dhe ofroj transport të sigurt dhe të shpejtë mallrash në të gjithë Shqipërinë. Nga Tirana në çdo qytet – zgjidhja juaj e besueshme për transport.</p>
+    </section>
+
+    <section>
+      <h2>Fotografi nga shërbimi ynë</h2>
+      <div class="gallery">
+        <img src="https://picsum.photos/800/400?random=1" alt="Transport 1">
+        <img src="https://picsum.photos/800/400?random=2" alt="Transport 2">
+        <img src="https://picsum.photos/800/400?random=3" alt="Transport 3">
+        <img src="https://picsum.photos/800/400?random=4" alt="Transport 4">
+        <img src="https://picsum.photos/800/400?random=5" alt="Transport 5">
+        <img src="https://picsum.photos/800/400?random=6" alt="Transport 6">
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Kontaktoni tani</h2>
+      <p>Për transport të shpejtë dhe të sigurt, mos hezitoni të kontaktoni.</p>
+      <a href="https://www.facebook.com/people/Arjan-Kola/pfbid0JofJ4K2BEaB8fY7PfhZkyR5pZuoxQDrRt2jpiVHdLwNLcgUDVa8ejf2Sgmyk4xcBl/" target="_blank">🌐 Vizitoni Facebookin tim</a>
+      <a href="mailto:transport.mallrash.arjan@gmail.com" target="_blank">✉️ Me shkruaj email !</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>📍 Fundi i Bulevardit të Ri, Tiranë | ☎️ +355 68 854 6267</p>
+    <p>© 2025 Transport Mallrash - Arjan Kola</p>
+  </footer>
+
+  <!-- Floating Button -->
+  <div class="floating-btns">
+    <a href="https://wa.me/355688546267" target="_blank">💬</a>
+  </div>
+</body>
+</html>
